@@ -1,0 +1,37 @@
+<h4>
+    order a burger
+    <span style="font-size:0.6em;">(make uR burger)</span>
+</h4>
+<form class="addBurger">
+    <div class="row mx-auto" style="width: 520px;">
+        <div class="col-sm-9">
+            <input type="text" id="burgerName" name="name" class="form-control " placeholder="Burger name">
+        </div>
+        <div class="col-sm-3">
+            <button type="submit" class="btn btn-dark">Add Ticket</button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+<div class="row main mx-auto">
+    <div class="col-sm bOrders">
+        <div class="card">
+            <div class="card-header">
+                <h2>Burger Orders:</h2>
+            </div>
+            {{> burgers/order-burgers}}
+        </div>
+    </div>
+    <div class="col-sm bPic">
+
+    </div>
+    <div class="col-sm bReady">
+        <div class="card">
+            <div class="card-header">
+                <h2>Burgers ready:</h2>
+            </div>
+            {{> burgers/ready-burgers}}
+        </div>
+    </div>
+</div>
